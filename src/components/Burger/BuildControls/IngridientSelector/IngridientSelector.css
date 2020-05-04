@@ -1,0 +1,49 @@
+.selector{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    width: 200px;
+    margin-top: 10px;
+
+}
+
+.selector input{
+    width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.selector button{
+    display: block;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button.more{
+    color: green;
+    border-color: lightgreen;
+}
+
+button.more:hover{
+    background-color: #b5ff8a;
+    color: white;
+}
+
+button.less:hover{
+    color: white;
+    background-color: #ff8f8f;
+}
+
+button.disable{
+    border-color: lightgray;
+    color: lightgray;
+}
+
+button.less{
+    color: red;
+    border-color: salmon;
+}
