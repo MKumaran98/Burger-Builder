@@ -12,7 +12,9 @@ const controls=[
 
 const BuildControls=(props)=>{
     return(
+        
         <div className={classes.controlContainer}>
+            <p>Current price: <strong>{props.totalPrice.toFixed(2)} $</strong></p>
             {
                 controls.map(control=><IngridientSelector 
                                         key={control.label} 
@@ -22,6 +24,7 @@ const BuildControls=(props)=>{
                                         enabled={props.ingridients[control.type]>0?true:false}
                                         />)
             }
+            <button className={classes.checkoutBtn} disabled={props.totalPrice>4?false:true} onClick={props.checkout}>Order Now!!</button>
         </div>
     );
 }

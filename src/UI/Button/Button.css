@@ -1,0 +1,28 @@
+.btn{
+    padding: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+}
+
+.btn.Danger{
+    color:orangered;
+}
+
+
+.Danger:hover{
+    background-color: red;
+    color: white;
+}
+
+.btn.Success{
+    color:green;
+}
+
+.Success:hover{
+    background-color: green;
+    color: white;
+}

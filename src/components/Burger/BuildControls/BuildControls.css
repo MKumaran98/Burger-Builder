@@ -4,4 +4,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+}
+
+.controlContainer p{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.checkoutBtn{
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-color: tomato;
+    font-size: 1.1rem;
+}
+
+.checkoutBtn:hover{
+    color: white;
+    background-image: linear-gradient(to right,#9e0808,red);
+}
+
+.checkoutBtn:disabled{
+    color: white;
+    background-color: lightgray;
+    border-color: lightgray;
+}
+
+
+.checkoutBtn:disabled:hover{
+    background-image: none;
+}
+
+
+.checkoutBtn:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
